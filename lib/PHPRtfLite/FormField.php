@@ -78,7 +78,7 @@ abstract class PHPRtfLite_FormField
      * @param   PHPRtfLite_Font         $font
      * @param   PHPRtfLite_ParFormat    $parFormat
      */
-    public function __construct(PHPRtfLite $rtf, PHPRtfLite_Font $font = null, PHPRtfLite_ParFormat $parFormat = null)
+    public function __construct(PHPRtfLite $rtf, ?PHPRtfLite_Font $font = null, ?PHPRtfLite_ParFormat $parFormat = null)
     {
         $this->_rtf         = $rtf;
         $this->_font        = $font;

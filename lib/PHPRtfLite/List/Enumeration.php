@@ -64,7 +64,7 @@ class PHPRtfLite_List_Enumeration extends PHPRtfLite_List
      * @param   PHPRtfLite_ParFormat    $parFormat
      */
     public function __construct(PHPRtfLite $rtf, $type = null,
-                                PHPRtfLite_Font $font = null, PHPRtfLite_ParFormat $parFormat = null)
+                                ?PHPRtfLite_Font $font = null, ?PHPRtfLite_ParFormat $parFormat = null)
     {
         parent::__construct($rtf, $type, $font, $parFormat);
 

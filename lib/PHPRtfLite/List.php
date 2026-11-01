@@ -92,8 +92,8 @@ abstract class PHPRtfLite_List
     public function __construct(
         PHPRtfLite $rtf,
         $type = null,
-        PHPRtfLite_Font $font = null,
-        PHPRtfLite_ParFormat $parFormat = null
+        ?PHPRtfLite_Font $font = null,
+        ?PHPRtfLite_ParFormat $parFormat = null
     ) {
         $this->_rtf         = $rtf;
         $this->_type        = $type;
@@ -112,8 +112,8 @@ abstract class PHPRtfLite_List
      * @return  $this
      */
     public function addItem($text,
-        PHPRtfLite_Font $font = null,
-        PHPRtfLite_ParFormat $parFormat = null,
+        ?PHPRtfLite_Font $font = null,
+        ?PHPRtfLite_ParFormat $parFormat = null,
         $convertTagsToRtf = true
     ) {
         if ($font === null) {

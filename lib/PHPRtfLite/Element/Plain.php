@@ -42,8 +42,8 @@ class PHPRtfLite_Element_Plain extends PHPRtfLite_Element
     public function __construct(
                 PHPRtfLite $rtf,
                 $text,
-                PHPRtfLite_Font $font = null,
-                PHPRtfLite_ParFormat $parFormat = null)
+                ?PHPRtfLite_Font $font = null,
+                ?PHPRtfLite_ParFormat $parFormat = null)
     {
         parent::__construct($rtf, $text, $font, $parFormat);
         $this->setIsRtfCode();
